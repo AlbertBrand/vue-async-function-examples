@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="show = !show">Show / hide components</button>
+    <SimpleUseAsyncComponent v-if="show" />
+    <UseAsyncComponent v-if="show" />
+    <UseFetchComponent v-if="show" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import SimpleUseAsyncComponent from "./components/SimpleUseAsyncComponent.vue";
+import UseAsyncComponent from "./components/UseAsyncComponent.vue";
+import UseFetchComponent from "./components/UseFetchComponent.vue";
 
 export default {
   name: "app",
+  data() {
+    return {
+      show: true
+    };
+  },
   components: {
-    HelloWorld
+    SimpleUseAsyncComponent,
+    UseAsyncComponent,
+    UseFetchComponent
   }
 };
 </script>
@@ -19,10 +30,6 @@ export default {
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

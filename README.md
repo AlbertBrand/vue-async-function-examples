@@ -1,29 +1,17 @@
-# function-demo-2
+# vue-async-function example
 
-## Project setup
+Showcase of some `vue-async-function` examples.
+
+## Install and run
+
+Make sure to install dependencies first:
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Then check out the examples in development mode:
 
-### Compiles and minifies for production
 ```
-npm run build
+npm run serve -- --open
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

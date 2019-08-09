@@ -16,7 +16,7 @@ async function loadStarship({ id }, signal) {
     headers,
     signal
   });
-  if (!res.ok) throw new Error(res);
+  if (!res.ok) throw res;
   return res.json();
 }
 

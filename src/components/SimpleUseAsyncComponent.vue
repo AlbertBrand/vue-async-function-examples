@@ -12,9 +12,7 @@ import { useAsync } from "vue-async-function";
 
 async function wait({ millis }) {
   return new Promise(resolve => {
-    setTimeout(function() {
-      resolve(`Done waiting ${millis} milliseconds!`);
-    }, millis);
+    setTimeout(() => resolve(`Done waiting ${millis} milliseconds!`), millis);
   });
 }
 

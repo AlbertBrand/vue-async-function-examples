@@ -10,6 +10,7 @@
         <input v-model.number="ms" type="number" step="100" />
       </label>
       <UseAsyncWithValueComponent :ms="ms" />
+      <UseFetchWithValueComponent />
     </div>
   </div>
 </template>
@@ -19,6 +20,7 @@ import SimpleUseAsyncComponent from "./components/SimpleUseAsyncComponent.vue";
 import UseAsyncComponent from "./components/UseAsyncComponent.vue";
 import UseFetchComponent from "./components/UseFetchComponent.vue";
 import UseAsyncWithValueComponent from "./components/UseAsyncWithValueComponent.vue";
+import UseFetchWithValueComponent from "./components/UseFetchWithValueComponent.vue";
 
 export default {
   name: "app",
@@ -32,7 +34,8 @@ export default {
     SimpleUseAsyncComponent,
     UseAsyncComponent,
     UseFetchComponent,
-    UseAsyncWithValueComponent
+    UseAsyncWithValueComponent,
+    UseFetchWithValueComponent
   }
 };
 </script>

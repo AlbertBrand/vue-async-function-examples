@@ -1,17 +1,3 @@
-# vue-async-function example
+# vue-async-function examples
 
-Showcase of some `vue-async-function` examples.
-
-## Install and run
-
-Make sure to install dependencies first:
-
-```
-npm install
-```
-
-Then check out the examples in development mode:
-
-```
-npm run serve -- --open
-```
+Moved to the [vue-async-function](https://github.com/AlbertBrand/vue-async-function/tree/master/examples) repo.
